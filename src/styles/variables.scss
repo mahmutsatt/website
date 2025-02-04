@@ -1,0 +1,31 @@
+// Colors
+$primary-colors: (
+  light: #2a5298,
+  main: #1e3c72,
+  dark: #142952
+);
+
+$text-colors: (
+  primary: #333333,
+  secondary: #666666,
+  light: #ffffff
+);
+
+// Breakpoints
+$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+// Typography
+$font-family-primary: 'Arial', sans-serif;
+$font-sizes: (
+  h1: 2.5rem,
+  h2: 2rem,
+  h3: 1.75rem,
+  body: 1rem,
+  small: 0.875rem
+); 
