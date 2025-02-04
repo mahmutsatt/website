@@ -18,10 +18,14 @@ public class WebsiteApplication {
 		return new WebMvcConfigurer() {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
-				registry.addMapping("/**")
-						.allowedOrigins("http://localhost:4200")
+				registry.addMapping("/api/**")
+						.allowedOrigins(
+							"http://localhost:4200",  // Development
+							"https://mahmutsat.com"   // Production
+						)
 						.allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
-						.allowedHeaders("*");
+						.allowedHeaders("*")
+						.allowCredentials(true);
 			}
 		};
 	}
